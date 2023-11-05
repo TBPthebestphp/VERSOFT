@@ -442,12 +442,7 @@ require_once("VERSOFT/Vistas/struct/piezas4websites/form/form.php");
 
     if ($_SERVER['REQUEST_METHOD'] == "GET") {
 
-        $json = [
-            "estatus" => 200,
-            "response" => "GET"
-        ];
-
-        echo json_encode($json,http_response_code($json['estatus']));
+        include_once "VERSOFT/SERVICIOS/Get/get.php";
 
     }
 

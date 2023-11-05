@@ -1,6 +1,6 @@
 <?php
 
-class conexion {
+class Conexion {
     public function conectar ($conexion) {
 
         try {
