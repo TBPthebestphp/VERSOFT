@@ -2,9 +2,11 @@
 
 require_once "VERSOFT/Controladores/getController_obtener/Obtener.php";
 
-$table = array_filter(explode("/",$_SERVER['REQUEST_URI']))[1];
+$table = explode("?",array_filter(explode("/",$_SERVER['REQUEST_URI']))[1])[0];
 
-$response = Obtener::getData($table);
+$select = $_GET['select'] ?? "*";
+
+$response = Obtener::getData($table,$select);
 
 $json = [
     "estatus" => 200,
