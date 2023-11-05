@@ -12,4 +12,12 @@ class Obtener {
 
     }
 
+    public static function getDataFilter ($table,$select,$linkTo,$equalTo) {
+
+        $response = Obtener_::getDataFilter($table,$select,$linkTo,$equalTo);
+
+        return $response;
+
+    }
+
 }
