@@ -115,9 +115,6 @@ require_once("VERSOFT/Vistas/struct/piezas4websites/form/form.php");
                     <path d="M13 11l1.5 6l1.5 -6" />
                     </svg>
                 </li>
-                <li>
-                    <a href="#">Bienes ra&iacute;ces</a>
-                </li>
             </ul>
         </nav>
 
