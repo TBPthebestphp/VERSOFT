@@ -346,7 +346,11 @@ require_once("VERSOFT/Vistas/struct/piezas4websites/form/form.php");
                     </li><br>
                     <li><h3>Estrategia de Contenido</h3>
                         <p>
-
+                            Planeaci&oacute;n, desarrollo y administraci&oacute;n
+                            de una p&aacute;gina web.<br>Con la planeaci&oacute;n
+                            adecuada tendr&aacute;s un panorama m&aacute;s claro
+                            del proyecto.<br>Aqu&iacute; se definen planes de contenido.<br>
+                            A&uacute;n no se ven colores o tecnolog&iacute;as utilizadas.
                         </p>
                     </li>
                     <li>Etapa de Pre-construcci&oacute;n</li>
