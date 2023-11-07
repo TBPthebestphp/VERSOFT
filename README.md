@@ -26,7 +26,7 @@ ejemplo de una consulta sencilla :
 
 http://www.versoft.website/cursos?select=*
 
-ejemplo de una consulta ordenando los datos :
+ejemplo de una consulta ordenando los datos de forma descendente:
 
 http://www.versoft.website/cursos?select=*&orderBy=id&orderMode=DESC
 
