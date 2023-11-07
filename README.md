@@ -22,7 +22,7 @@ utiliza el endpoint https://versoft.website/cursos
 
 para hacer tus test de los filtros y el ordenamiento de la informacion
 
-ejemplo de una consulta sensilla :
+ejemplo de una consulta sencilla :
 
 http://www.versoft.website/cursos?select=*
 
