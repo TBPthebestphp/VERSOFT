@@ -32,6 +32,7 @@ require_once("VERSOFT/Vistas/struct/piezas4websites/form/form.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="VERSOFT/Vistas/struct/html/css/estilos.css">
+    <link rel="icon" type="image/x-icon" href="VERSOFT/Vistas/struct/html/imgs/favicon/favicon.ico">
     <title>127.0.0.1</title>
 </head>
 <body>
