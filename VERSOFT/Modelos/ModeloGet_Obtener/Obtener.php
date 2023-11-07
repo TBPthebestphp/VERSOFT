@@ -4,14 +4,24 @@ require_once "VERSOFT/Modelos/Conexion/conexion.php";
 
 class Obtener_ {
 
-    public static function getData ($table,$select,$orderBy,$orderMode) {
+    public static function getData ($table,$select,$orderBy,$orderMode,$startAt,$endAt) {
 
         require_once "VERSOFT/Modelos/Conexion/data/data.php";
 
+        //sentencia sin ordenar y sin limitar
         $sql = "SELECT $select FROM $table";
 
-        if ($orderBy != null && $orderMode != null) {
+        // sentencia para ordenar sin limitar
+        if ($orderBy != null && $orderMode != null && $startAt == null && $endAt == null) {
             $sql = "SELECT $select FROM $table ORDER BY $orderBy $orderMode";
+        }
+        //sentencia para ordenar y limitar datos
+        else if ($orderBy != null && $orderMode != null && $startAt != null && $endAt != null) {
+            $sql = "SELECT $select FROM $table ORDER BY $orderBy $orderMode LIMIT $startAt, $endAt";
+        }
+        //sentencia para limitar sin ordenar
+        else if ($orderBy == null && $orderMode == null && $startAt != null && $endAt != null) {
+            $sql = "SELECT $select FROM $table LIMIT $startAt, $endAt";
         }
 
         $conex = new Conexion;
@@ -24,7 +34,8 @@ class Obtener_ {
 
     }
 
-    public static function getDataFilter ($table,$select,$linkTo,$equalTo,$orderBy,$orderMode) {
+    public static function getDataFilter ($table,$select,$linkTo,$equalTo,$orderBy,$orderMode
+    ,$startAt,$endAt) {
 
         require_once "VERSOFT/Modelos/Conexion/data/data.php";
 
@@ -44,10 +55,22 @@ class Obtener_ {
 
         }
 
+        //sin ordenar y sin limitar
         $sql = "SELECT $select FROM $table WHERE $columnas[0] = :$columnas[0] $string";
 
-        if ($orderBy != null && $orderMode != null) {
+        // sentencia para ordenar sin limitar
+        if ($orderBy != null && $orderMode != null && $startAt == null && $endAt == null) {
             $sql = "SELECT $select FROM $table WHERE $columnas[0] = :$columnas[0] $string ORDER BY $orderBy $orderMode";
+        }
+
+        //sentencia para ordenar y limitar datos
+        else if ($orderBy != null && $orderMode != null && $startAt != null && $endAt != null) {
+            $sql = "SELECT $select FROM $table WHERE $columnas[0] = :$columnas[0] $string ORDER BY $orderBy $orderMode LIMIT $startAt, $endAt";
+        }
+
+        //sentencia para limitar sin ordenar
+        else if ($orderBy == null && $orderMode == null && $startAt != null && $endAt != null) {
+            $sql = "SELECT $select FROM $table WHERE $columnas[0] = :$columnas[0] $string LIMIT $startAt, $endAt";
         }
 
         $conex = new Conexion;

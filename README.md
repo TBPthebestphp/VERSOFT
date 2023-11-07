@@ -17,6 +17,8 @@ linkTo
 equalTo
 orderBy
 orderMode
+startAt
+endAt
 
 utiliza el endpoint https://versoft.website/cursos
 
@@ -29,6 +31,14 @@ http://www.versoft.website/cursos?select=*
 ejemplo de una consulta ordenando los datos de forma descendente:
 
 http://www.versoft.website/cursos?select=*&orderBy=id&orderMode=DESC
+
+ejemplo de una consulta para limitar datos :
+
+https://versoft.website/cursos?select=*&startAt=0&endAt=1
+
+ejemplo limitar y ordenar :
+
+https://www.versoft.website/cursos?select=*,estatus&orderBy=id&orderMode=DESC&startAt=0&endAt=2
 
 para mas informacion al respecto mantente 
 al pendiente de las actualizaciones en github
