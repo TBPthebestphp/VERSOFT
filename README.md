@@ -4,7 +4,7 @@ API RESTFUL PHP - MYSQL
 
 <pre>
 
-Acoteciones para las consultas get
+Acotaciones para las consultas get
 
 , = separador para las columnas cuando se quiere hacer consultas de mas de una columna
 | = lo mismo pero para los valores de dichas columnas
