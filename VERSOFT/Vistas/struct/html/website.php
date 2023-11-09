@@ -29,9 +29,15 @@ require_once("VERSOFT/Vistas/struct/piezas4websites/form/form.php");
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@200&family=Pixelify+Sans&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="VERSOFT/Vistas/struct/html/css/estilos.css" as="style">
     <link rel="stylesheet" href="VERSOFT/Vistas/struct/html/css/estilos.css">
+    <link rel="preload" href="VERSOFT/Vistas/temas/freelancer/freelancer.css" as="tema">
+    <link rel="stylesheet" href="VERSOFT/Vistas/temas/freelancer/freelancer.css">
     <link rel="icon" type="image/x-icon" href="VERSOFT/Vistas/struct/html/imgs/favicon/favicon.ico">
     <title>127.0.0.1</title>
 </head>
@@ -101,7 +107,7 @@ require_once("VERSOFT/Vistas/struct/piezas4websites/form/form.php");
             <path d="M12 16h3" />
             </svg>
             </h1>
-            <h3>Ramiro G Gonzalez | Freelancer</h3>
+            <h3>Ramiro G Gonzalez | <span>Freelancer<span></h3>
         </header>
 
         <nav>
@@ -116,6 +122,42 @@ require_once("VERSOFT/Vistas/struct/piezas4websites/form/form.php");
                     <path d="M13 11l1.5 6l1.5 -6" />
                     </svg>
                 </li>
+                <li>
+                    <a href="#">Diplomas
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-certificate" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                    <path d="M5 8v-3a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2h-5" />
+                    <path d="M6 14m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M4.5 17l-1.5 5l3 -1.5l3 1.5l-1.5 -5" />
+                    </svg>
+
+                    </a>
+                </li>
+                <li><a href="http://adminer.local/adminer.php">
+                    versoft - adminer
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-database-edit" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M4 6c0 1.657 3.582 3 8 3s8 -1.343 8 -3s-3.582 -3 -8 -3s-8 1.343 -8 3"></path>
+                    <path d="M4 6v6c0 1.657 3.582 3 8 3c.478 0 .947 -.016 1.402 -.046"></path>
+                    <path d="M20 12v-6"></path>
+                    <path d="M4 12v6c0 1.526 3.04 2.786 6.972 2.975"></path>
+                    <path d="M18.42 15.61a2.1 2.1 0 0 1 2.97 2.97l-3.39 3.42h-3v-3l3.42 -3.39z"></path>
+                    </svg>
+                </a></li>
+                <li><a href="http://blog.local">
+                    versoft - blog
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-article" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M3 4m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
+                    <path d="M7 8h10"></path>
+                    <path d="M7 12h10"></path>
+                    <path d="M7 16h10"></path>
+                    </svg>
+                </a></li>
             </ul>
         </nav>
 
@@ -147,6 +189,44 @@ require_once("VERSOFT/Vistas/struct/piezas4websites/form/form.php");
                     y lo mas importante diviertete !.
                 </p>
             </div>
+
+            <div>
+
+                <h2>End Points</h2>
+
+                <ul>
+                    <li>cursos</li>
+                    <li>person</li>
+                    <li>blog</li>
+                    <li>users</li>
+                    <li>registro</li>
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h2>Acotaciones para las consultas get</h2>
+
+                <p>, = separador para las columnas cuando se quiere hacer 
+                consultas de mas de una columna</p><br>
+                <p>| = lo mismo pero para los valores de dichas columnas</p>
+                <p>& = sirve para unir variables</p>
+
+                <h3>Variables get :</h3>
+
+                <ul>
+                    <li>select</li>
+                    <li>linkTo</li>
+                    <li>equalTo</li>
+                    <li>orderBy</li>
+                    <li>orderMode</li>
+                    <li>startAt</li>
+                    <li>endAt</li>
+                </ul>
+
+            </div>
+
         </aside>
 
         <section>
@@ -209,19 +289,7 @@ require_once("VERSOFT/Vistas/struct/piezas4websites/form/form.php");
 
         <section>
 
-            <h2>
-                
-                Mis Servicios 
-
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-certificate" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
-                <path d="M5 8v-3a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2h-5" />
-                <path d="M6 14m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                <path d="M4.5 17l-1.5 5l3 -1.5l3 1.5l-1.5 -5" />
-                </svg>
-
-            </h2>
+            <h2>Mis Servicios</h2>
 
             <h4>Obten tu Hash Completamente gratis !</h4>
 
