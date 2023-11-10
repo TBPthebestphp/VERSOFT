@@ -107,7 +107,13 @@ require_once("VERSOFT/Vistas/struct/piezas4websites/form/form.php");
             <path d="M12 16h3" />
             </svg>
             </h1>
-            <h3>Ramiro G Gonzalez | <span>Freelancer<span></h3>
+            <h3>
+
+                <img src="VERSOFT/Vistas/struct/html/imgs/logo/logo.jpg" alt="mx logo" width=30% height=100%>
+
+                Ramiro G Gonzalez | <span>Freelancer<span>
+
+            </h3>
         </header>
 
         <nav>
