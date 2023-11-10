@@ -141,18 +141,6 @@ require_once("VERSOFT/Vistas/struct/piezas4websites/form/form.php");
 
                     </a>
                 </li>
-                <li><a href="http://adminer.local/adminer.php">
-                    versoft - adminer
-
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-database-edit" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M4 6c0 1.657 3.582 3 8 3s8 -1.343 8 -3s-3.582 -3 -8 -3s-8 1.343 -8 3"></path>
-                    <path d="M4 6v6c0 1.657 3.582 3 8 3c.478 0 .947 -.016 1.402 -.046"></path>
-                    <path d="M20 12v-6"></path>
-                    <path d="M4 12v6c0 1.526 3.04 2.786 6.972 2.975"></path>
-                    <path d="M18.42 15.61a2.1 2.1 0 0 1 2.97 2.97l-3.39 3.42h-3v-3l3.42 -3.39z"></path>
-                    </svg>
-                </a></li>
                 <li><a href="http://blog.local">
                     versoft - blog
                     
@@ -338,32 +326,34 @@ require_once("VERSOFT/Vistas/struct/piezas4websites/form/form.php");
                 )."<hr><h3>Crea un Usuario con tu hash</h3>".form(
                     "#",
                     "POST",
-                    "usuario",
+                    "introduce tu nick name creado previamente",
                     "registrar",
                     "
-                    <label>
-        
-                        <input type='password' 
-                        placeholder='password'
-                        name='text2' 
-                        id='text2'
-                        required >
-                        
-                    </label>
+                    
                     <label>
         
                         <input type='text' 
-                        placeholder='hash'
+                        placeholder='introduce tu hash creado previamente'
                         name='hash' 
                         id='hash'
                         required >
                     
                     </label>
+
+                    <label>
+        
+                        <input type='password' 
+                        placeholder='crea una password'
+                        name='text2' 
+                        id='text2'
+                        required >
+                        
+                    </label>
                     "
                 )."<hr><h2>Inicia Sesion</h2>".form(
                     "#",
                     "POST",
-                    "Usuario",
+                    "Nick name",
                     "Iniciar Sesion",
                     "
                     <label>
@@ -374,6 +364,16 @@ require_once("VERSOFT/Vistas/struct/piezas4websites/form/form.php");
                         id='text2'
                         required >
                         
+                    </label>
+
+                    <label>
+        
+                        <input type='text' 
+                        placeholder='hash'
+                        name='hash' 
+                        id='hash'
+                        required >
+                    
                     </label>
                     "
                 )."<hr><h5>Almacena informacion en la base de datos !</h5>".form(
