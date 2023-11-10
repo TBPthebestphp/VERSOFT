@@ -384,7 +384,8 @@ require_once("VERSOFT/Vistas/struct/piezas4websites/form/form.php");
                     "<label>      
                         <textarea
                             name='text2'
-                            id=''text2'
+                            id='text2'
+                            placeholder='information here'
                             required
                         ></textarea>
                     </label>"
