@@ -141,6 +141,17 @@ require_once("VERSOFT/Vistas/struct/piezas4websites/form/form.php");
 
                     </a>
                 </li>
+                <li>
+                    <a href="http://thebestphproject.local">
+                        the best php project
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6"></path>
+                        <path d="M11 13l9 -9"></path>
+                        <path d="M15 4h5v5"></path>
+                        </svg>
+                    </a>
+                </li>
                 <li><a href="http://blog.local">
                     versoft - blog
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -288,119 +299,6 @@ require_once("VERSOFT/Vistas/struct/piezas4websites/form/form.php");
                 no dude en contactarme estare extremadamente
                 feliz de hacer equipo con ustedes.
             </p>
-        </section>
-
-        <section>
-
-            <h2>Mis Servicios</h2>
-
-            <h4>Obten tu Hash Completamente gratis !</h4>
-
-            <?php
-                
-                echo form(
-                    "#",
-                    "POST",
-                    "Nombre",
-                    "crear hash",
-                    "
-                    <label>
-        
-                        <input type='number' 
-                        placeholder='edad'
-                        name='text2' 
-                        id='text2'
-                        required >
-                    
-                    </label>
-                    <label>
-        
-                        <input type='text' 
-                        placeholder='Fecha de nacimiento'
-                        name='fecha' 
-                        id='fecha'
-                        required >
-                    
-                    </label>
-                    <label>
-        
-                        <input type='text' 
-                        placeholder='Crea un Nick-Name'
-                        name='chars' 
-                        id='chars'
-                        required >
-                    
-                    </label>
-                    "
-                )."<hr><h3>Crea un Usuario con tu hash</h3>".form(
-                    "#",
-                    "POST",
-                    "introduce tu nick name creado previamente",
-                    "registrar",
-                    "
-                    
-                    <label>
-        
-                        <input type='text' 
-                        placeholder='introduce tu hash creado previamente'
-                        name='hash' 
-                        id='hash'
-                        required >
-                    
-                    </label>
-
-                    <label>
-        
-                        <input type='password' 
-                        placeholder='crea una password'
-                        name='text2' 
-                        id='text2'
-                        required >
-                        
-                    </label>
-                    "
-                )."<hr><h2>Inicia Sesion</h2>".form(
-                    "#",
-                    "POST",
-                    "Nick name",
-                    "Iniciar Sesion",
-                    "
-                    <label>
-        
-                        <input type='password' 
-                        placeholder='password'
-                        name='text2' 
-                        id='text2'
-                        required >
-                        
-                    </label>
-
-                    <label>
-        
-                        <input type='text' 
-                        placeholder='hash'
-                        name='hash' 
-                        id='hash'
-                        required >
-                    
-                    </label>
-                    "
-                )."<hr><h5>Almacena informacion en la base de datos !</h5>".form(
-                    "#",
-                    "POST",
-                    "title",
-                    "guardar",
-                    "<label>      
-                        <textarea
-                            name='text2'
-                            id='text2'
-                            placeholder='information here'
-                            required
-                        ></textarea>
-                    </label>"
-                );
-
-            ?>
         </section>
 
         <section>
